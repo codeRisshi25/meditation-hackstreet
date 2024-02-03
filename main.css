@@ -1,0 +1,49 @@
+#video-container {
+    width: 60%;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#video-feed {
+    width: 100%;
+    max-width: 640px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    margin-left: -390px;
+}
+
+.timer {
+    position: absolute;
+    top: -100px;
+    right: 12px;
+    background-color: transparent;
+    width: 450px;
+    height: 610px;
+    /* margin-left: 690px;
+     */
+    border-radius: 20px;
+}
+
+#background-video {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 760px;
+    z-index: -1;
+}
+
+#overlay {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    background-image: url("postion1.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: center;
+    opacity: 0.1;
+   
+}

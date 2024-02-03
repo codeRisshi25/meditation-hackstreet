@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="video-container">
+        <h1>Meditation</h1>
+        <video id="video-feed" autoplay playsinline></video>
+        <div id="overlay"></div>
+        <video id="background-video" autoplay loop>
+            <!-- <source src="pexels-alena-darmel-7192622 (Original).mp4" height="100%" width="800px" type="video/mp4"> -->
+            <source src="grass.mp4" height="100%" width="800px" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="timer">
+            <div class="container">
+                <h1> Timer</h1>
+                <div id="time">
+                    <span class="digit" id="hr">
+                        00</span>
+                    <span class="txt">Hr</span>
+                    <span class="digit" id="min">
+                        00</span>
+                    <span class="txt">Min</span>
+                    <span class="digit" id="sec">
+                        00</span>
+                    <span class="txt">Sec</span>
+                    <span class="digit" id="count">
+                        00</span>
+                </div>
+                <div id="buttons">
+                    <button class="btn" id="start">
+                        Start</button>
+                    <button class="btn" id="stop">
+                        Stop</button>
+                    <button class="btn" id="reset">
+                        Reset</button>
+                </div>
+                <audio id="sound" src="Chipi Chipi Chapa Chapa Ringtone Download - MobCup.Com.Co.mp3" loop></audio>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+<script src="script1.js"></script>
+
+
+</html>
