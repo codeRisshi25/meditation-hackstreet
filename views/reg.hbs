@@ -1,0 +1,82 @@
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="/register.css" />
+    <title>Register</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>Register</h2>
+            <div class="inputbox">
+              <ion-icon name="name-outline"></ion-icon>
+              <input type="name" required />
+              <label for="">Name</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required />
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required />
+              <label for="">Confirm-Password</label>
+            </div>
+            <!-- <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                href="#">Forget Password</a></label>
+
+                    </div> -->
+            <button>Register</button>
+            <div class="register">
+              <p>Already have a account
+                <br /><br /><a href="/index">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      // Get the input fields const emailInput =
+      document.querySelector('input[type="email"]'); const passwordInput =
+      document.querySelector('input[type="password"]:first-of-type'); const
+      confirmPasswordInput =
+      document.querySelector('input[type="password"]:last-of-type'); // Add an
+      event listener to the password input field
+      passwordInput.addEventListener('input', checkPasswords); // Add an event
+      listener to the confirm password input field
+      confirmPasswordInput.addEventListener('input', checkPasswords); //
+      Function to check if the passwords match function checkPasswords() { const
+      password = passwordInput.value; const confirmPassword =
+      confirmPasswordInput.value; // Check if the passwords match if (password
+      !== confirmPassword) { confirmPasswordInput.setCustomValidity('Passwords
+      do not match'); } else { confirmPasswordInput.setCustomValidity(''); } }
+      // Function to validate email function validateEmail(email) { const re =
+      /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/; return re.test(email); }
+      // Add an event listener to the email input field
+      emailInput.addEventListener('input', () => { const email =
+      emailInput.value.trim(); // Check if the email is valid if
+      (validateEmail(email)) { emailInput.setCustomValidity(''); } else {
+      emailInput.setCustomValidity('Invalid email'); } });
+    </script>
+  </body>
+
+</html>

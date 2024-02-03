@@ -70,8 +70,11 @@ app.set("view engine", "hbs");
 // 	}
 // });
 
-app.get("/", (req, res) => {
+app.get("/index", (req, res) => {
   res.render("./index");
+});
+app.get("/reg", (req, res) => {
+  res.render("./reg");
 });
 
 app.listen(3000, () => {
