@@ -27,7 +27,7 @@ db.serialize(() => {
 // 	password: 'password123'
 // };
 
-async function AddUser(user) {
+async function addUser(user) {
   db.run(
     `
 	INSERT INTO Users (name, email, password) VALUES (?, ?, ?)`,
