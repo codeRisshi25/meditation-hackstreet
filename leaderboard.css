@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-btn-color: #ffb534;
+  --primary-bg: #fbf6ee;
+  --primary-font: #262626;
+  --secondary-color: #c1f2b0;
+  --tertiary-color: #65b741;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: verdana;
+  font-size: 1.15rem;
+  background-color: var(--primary-bg);
+  /* margin: 0; */
+  line-height: normal;
+  background: url("https://raw.githubusercontent.com/codeRisshi25/meditation-hackstreet/main/assets/auth-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/* Utiliity classes */
+.btn {
+  width: max-content;
+  padding: 0.4rem;
+  color: var(--primary-font);
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+  font-weight: 500;
+  /* margin: 0px 20px; */
+  /* border-top-right-radius: 10px; */
+  /* border-bottom-left-radius: 10px; */
+  /* border-bottom-right-radius: 4px; */
+  /* border-top-left-radius: 4px; */
+  /* color: var(--secondary-color); */
+}
+a {
+  text-decoration: none;
+  color: var(--primary-font);
+  cursor: pointer;
+}
+h1 {
+  color: var(--primary-font);
+  text-align: center;
+}
+.leaderboard {
+  /* margin-block: 2rem; */
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-block: 4rem;
+  padding: 0.8rem;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.leaderboard-inner {
+  width: 90%;
+  margin: auto;
+  background-color: var(--primary-bg);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.row-heading {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-btn-color);
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  margin-block: 0.5rem;
+}
+.row {
+  background-color: #ffd996;
+  display: flex;
+  border-radius: 0.4rem;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  margin-block: 0.5rem;
+}
+
+header,
+nav {
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--primary-bg),
+    var(--secondary-color)
+  );
+  padding: 0.5em;
+  justify-content: space-between;
+}
+.nav-left .leaderboard-btn {
+  background-color: var(--primary-btn-color);
+  padding: 0.4rem 0.8rem;
+}
+.nav-right,
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.nav-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  gap: 0.5rem;
+}
+.nav-right li a {
+  padding: 0.4rem 0.8rem;
+  /* margin: ; */
+  border: none;
+  background-color: var(--tertiary-color);
+  color: var(--primary-bg);
+  border-radius: 0.4rem;
+}
+.nav-right .donate {
+  background-color: var(--primary-btn-color);
+  padding: 0.4rem 0.8rem;
+  color: var(--primary-bg);
+}
+#image-logo {
+  width: 2rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}

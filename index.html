@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediTree | Lets save the environment and calm our mind</title>
+    <!-- <link rel="stylesheet" href="global.css"> -->
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!-- <style>
+  
+  </style> -->
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- Header starts here -->
+      <header>
+        <nav>
+          <div class="nav-left">
+            <div class="logo">
+              <img
+                src="./Meditree.png"
+                alt="MediTree"
+                id="image-logo"
+              />MediTree
+            </div>
+            <button class="btn leaderboard-btn">
+              <a href="./leaderboard.html" target="_blank"> Leaderboard </a>
+            </button>
+          </div>
+          <div class="nav-right">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="./about.html">About us</a></li>
+            </ul>
+            <button class="btn btnk donate">
+              <a href="#">Donate to NGO</a>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <!-- Header ends here -->
+      <!-- Left section - leaderboard -->
+      <main>
+        <div class="middle" id="middle-section">
+          <!-- Posture options btn -->
+          <div class="posture-options" id="posture-options">
+            <div class="posture" id="1">
+              <img src="./post1.png" alt="posture1" />
+              <p class="posture-detail">Posture 1 (0-8 yrs)</p>
+            </div>
+            <div class="posture" id="2">
+              <img src="./post2.png" alt="posture2" />
+              <p class="posture-detail">Posture 2 (8-15 yrs)</p>
+            </div>
+            <div class="posture" id="3">
+              <img src="./postion1.png" alt="posture3" />
+              <p class="posture-detail">Posture 3 (all ages)</p>
+            </div>
+          </div>
+          <div class="video-area">
+            <video id="video-feed" autoplay playsinline></video>
+            <div class="controls">
+              <button id="start-alone">Start Alone</button>
+              <button id="start-with-friends">
+                <a
+                  href="https://vaibhavkothari33.github.io/Zynk/lobby.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Get Trainer</a
+                >
+              </button>
+            </div>
+
+            <div id="overlay" style="display: none"></div>
+
+            <!-- <video id="background-video" autoplay loop> -->
+            <!-- <source src="pexels-alena-darmel-7192622 (Original).mp4" height="100%" width="800px" type="video/mp4"> -->
+            <!-- <source src="grass.mp4" height="100%" width="800px" type="video/mp4"> -->
+            <!-- Your browser does not support the video tag. -->
+            <!-- </video> -->
+          </div>
+        </div>
+        <div class="right">
+          <div class="tree-area"></div>
+          <div class="timer-area">
+            <div class="timer">
+              <div class="container">
+                <h1>Timer</h1>
+                <div id="time">
+                  <span class="digit" id="hr"> 00</span>
+                  <span class="txt">Hr</span>
+                  <span class="digit" id="min"> 00</span>
+                  <span class="txt">Min</span>
+                  <span class="digit" id="sec"> 00</span>
+                  <span class="txt">Sec</span>
+                  <span class="digit" id="count"> 00</span>
+                </div>
+                <div id="buttons">
+                  <button class="btn btn1 btn4" id="start">Start</button>
+                  <button class="btn btn2 btn4" id="stop">Stop</button>
+                  <button class="btn btn3 btn4" id="reset">Reset</button>
+                </div>
+                <audio id="sound" src="meditationSound.mp3" loop></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+  <script></script>
+</html>
