@@ -196,17 +196,17 @@ startAlone.addEventListener("click", () => {
       if (imageNumber === "1") {
         let overlay = document.getElementById("overlay");
         // console.log(overlay.style);
-        overlay.style.backgroundImage = "url('./postion1.png')";
+        overlay.style.backgroundImage = "url('./postion1.jpg')";
       }
       if (imageNumber === "2") {
         let overlay = document.getElementById("overlay");
         // console.log(overlay.style);
-        overlay.style.backgroundImage = "url('./post2.png')";
+        overlay.style.backgroundImage = "url('./post2.jpg')";
       }
       if (imageNumber === "3") {
         let overlay = document.getElementById("overlay");
         // console.log(overlay.style);
-        overlay.style.backgroundImage = "url('./post1.png')";
+        overlay.style.backgroundImage = "url('./post1.jpg')";
       }
     });
   });

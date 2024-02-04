@@ -7,6 +7,7 @@
     <title>About-Us</title>
     
     <link rel="shortcut icon" href="./Meditree.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <style>
         body {
             padding: 0;
@@ -166,6 +167,15 @@
             font-size: 30px;
             text-align: center;
         }
+        .logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.2rem;
+}
+#image-logo{
+    width: 2em;
+}
     </style>
 
 </head>
@@ -173,13 +183,13 @@
 <body>
     <nav>
         <div class="nav-left">
-            <div class="logo"><img src="" alt="MediTree" /></div>
+            <div class="logo"><img src="./Meditree.png" alt="MediTree" id="image-logo" />MediTree</div>
             <button class="btn leaderboard-btn">Leaderboard</button>
         </div>
         <div class="nav-right">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="./about.html">About us</a></li>
             </ul>
             <button class="btn donate"><a href="#">Donate to NGO</a></button>
     </nav>
