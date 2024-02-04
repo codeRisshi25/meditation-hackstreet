@@ -1,207 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-    <link rel="shortcut icon" href="./Meditree.png" type="image/x-icon">
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: verdana;
-            font-size: 1.15rem;
-            background-color: var(--primary-bg);
-        }
+    <link rel="shortcut icon" href="./Meditree.png" type="image/x-icon" />
+    <link rel="stylesheet" href="leaderboard.css" />
+  </head>
 
-        :root {
-            --primary-btn-color: #ffb534;
-            --primary-bg: #fbf6ee;
-            --primary-font: #262626;
-            --secondary-color: #c1f2b0;
-            --tertiary-color: #65b741;
-        }
-
-        .main-container {
-            width: 100%;
-            min-height: 100vh;
-            /* border: 2px solid; */
-        }
-
-        /* Utiliity classes */
-        .btn {
-            width: max-content;
-            padding: 0.4rem;
-            color: var(--primary-font);
-            border: none;
-            border-radius: 0.4rem;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: all 0.5s ease;
-            font-weight: 500;
-            /* margin: 0px 20px; */
-            /* border-top-right-radius: 10px; */
-            /* border-bottom-left-radius: 10px; */
-            /* border-bottom-right-radius: 4px; */
-            /* border-top-left-radius: 4px; */
-            /* color: var(--secondary-color); */
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--primary-font);
-            cursor: pointer;
-        }
-
-        h1 {
-            color: var(--primary-font);
-            text-align: center;
-        }
-
-        /* Header section */
-        header,
-        nav {
-            width: 100%;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            background: linear-gradient(to right,
-                    var(--primary-bg),
-                    var(--secondary-color));
-            padding-block: 0.5rem;
-            justify-content: space-between;
-        }
-
-        .nav-left .leaderboard-btn {
-            background-color: var(--primary-btn-color);
-            padding: 0.4rem 0.8rem;
-        }
-
-        .nav-right,
-        .nav-left {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            gap: 1rem;
-        }
-
-        .nav-right ul {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            list-style: none;
-            gap: 0.5rem;
-        }
-
-        .nav-right li a {
-            padding: 0.4rem 0.8rem;
-            border: none;
-            background-color: var(--tertiary-color);
-            color: var(--primary-bg);
-            border-radius: 0.4rem;
-        }
-
-        .nav-right .donate {
-            background-color: var(--primary-btn-color);
-            padding: 0.4rem 0.8rem;
-            color: var(--primary-bg);
-        }
-
-        main {
-            width: 97.99%;
-            padding: 0.5rem;
-            display: flex;
-            align-items: center;
-            /* flex-wrap: nowrap; */
-        }
-
-        /* Left -section */
-        .left {
-            width: 20%;
-            height: 80vh;
-            background-color: #0e85fc;
-        }
-
-        /* Middle section */
-        .middle {
-            min-width: 78%;
-            max-width: 80%;
-            position: relative;
-        }
-
-        .heading {
-            height: 120px;
-            width: 100%;
-            color: green;
-            font-size: 85px;
-            text-align: center;
-        }
-
-        .heading1 {
-            height: 120px;
-            width: 100%;
-            color: green;
-            font-size: 85px;
-            text-align: center;
-        }
-
-        .para1 {
-            height: 120px;
-            width: 100%;
-            color: green;
-            font-size: 35px;
-            text-align: center;
-            padding-bottom: 350px;
-        }
-
-        .para2 {
-            height: 120px;
-            width: 100%;
-            color: green;
-            font-size: 30px;
-            text-align: center;
-        }
-    </style>
-
-</head>
-
-<body>
+  <body>
     <nav>
-        <div class="nav-left">
-            <div class="logo"><img src="" alt="MediTree" /></div>
-            <button class="btn leaderboard-btn">Leaderboard</button>
+      <div class="nav-left">
+        <div class="logo">
+          <img src="./Meditree.png" alt="MediTree" id="image-logo" />MediTree
         </div>
-        <div class="nav-right">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
-            <button class="btn donate"><a href="#">Donate to NGO</a></button>
+        <button class="btn leaderboard-btn">Leaderboard</button>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+        </ul>
+        <button class="btn donate"><a href="#">Donate to NGO</a></button>
+      </div>
     </nav>
-    </div>
-    <h1 class="heading">About MediTree</h1>
-    <p class="para1">
-        Meditree is a website that offers meditation sessions with various sitting positions and accompanying music,
-        incorporating a timer for convenience. Additionally, it features a unique partnership with NGOs to plant trees
-        whenever users practice meditation on the platform, thus contributing to environmental causes.
-        <br><br>Furthermore,
-        Meditree provides a leaderboard feature that promotes a healthy competition among users, allowing them to track
-        and compare their meditation progress. This comprehensive approach makes Meditree not only a tool for personal
-        well-being but also a platform that fosters environmental sustainability and fosters a sense of community
-        through healthy competition.
-    </p><br>
-    <h1 class="heading1">About-Us</h1>
-    <p class="para2">Welcome to Meditation Tree, where tech meets heart! We're a dynamic team of four: <br><br>Vansh,
-        our code
-        maestro <br><br> Vaibhav, the web designer and sports enthusiast <br><br> Risshi, the backend wizard and 3D
-        artist <br><br>
-        Keshav, our AI and blockchain enthusiast. <br><br>Eager to innovate and explore, we invite you to join us on
-        this
-        exciting journey of mindfulness and tech brilliance. Let's explore and grow together! 🚀</p>
-</body>
 
+    <div class="leaderboard">
+      <div class="title">
+        <h2>Leaderboard</h2>
+      </div>
+      <div class="leaderboard-inner">
+        <div class="row-heading">
+          <div class="rank">Rank</div>
+          <div class="name">Name</div>
+          <div class="tree-number">Trees Planted</div>
+        </div>
+        <div class="row">
+          <div class="rank">1</div>
+          <div class="name">Keshav</div>
+          <div class="tree-number">2</div>
+        </div>
+        <div class="row">
+          <div class="rank">2</div>
+          <div class="name"></div>
+          <div class="tree-number">2</div>
+        </div>
+        <div class="row">
+          <div class="rank">3</div>
+          <div class="name">Sarah G.</div>
+          <div class="tree-number">2</div>
+        </div>
+        <div class="row">
+          <div class="rank">4</div>
+          <div class="name">Sarah G.</div>
+          <div class="tree-number">2</div>
+        </div>
+        <div class="row">
+          <div class="rank">5</div>
+          <div class="name">Sarah G.</div>
+          <div class="tree-number">2</div>
+        </div>
+        <div class="row">
+          <div class="rank">6</div>
+          <div class="name">Sarah G.</div>
+          <div class="tree-number">2</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
